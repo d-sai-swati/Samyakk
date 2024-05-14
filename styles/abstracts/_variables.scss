@@ -1,0 +1,40 @@
+// all common variables for website
+
+
+// Font Weight Variables
+$font-weight-100: 100;
+$font-weight-200: 200;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-550: 550;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
+
+// Font Family Variables
+$font-futura-md-bt: FuturaMd;
+$font-sign-painter: SignPainter;
+
+// Color Variables
+// Primary Colors
+$primary-600: #9D7F64;
+$primary-500: #A18455;
+$primary-400: #F0E3D8;
+$primary-300: #b59c74;
+$primary-200: #806943;
+$primary-500-20: #A87A2F33;
+
+// Secondary Colors
+$Secondary-800: #F5F5F6;
+$Secondary-700: #D9D9D9;
+$Secondary-600: #4E5258;
+$Secondary-500: #404040;
+$Secondary-400: #404040;
+$Secondary-300: #CACACA;
+$Secondary-200: #F6F8F9;
+$Secondary-100: #FFFFFF;
+
+// Font Family Variables
+$text-primary: var(--font-futuramd);
+$text-secondary: var(--font-signpainter);

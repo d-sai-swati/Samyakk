@@ -1,0 +1,180 @@
+@import './mixins';
+
+.tb-btn {
+     @include font(16px, 19.18px);
+     transition: all 0.3s ease;
+     cursor: pointer;
+}
+
+.tb-btn-lg {
+     padding: 11px 26px;
+     @include font(18px, 19.18px);
+}
+
+.tb-btn-md {
+     padding: 8px 26px !important;
+     @include font(16px, 19.18px);
+}
+
+.tb-btn-md-bk {
+     padding: 8px 26px !important;
+     @include font(16px, 19.18px, 400, FuturaBk);
+
+     @media (min-width: 375px) {
+          @include font(14px, 16.78px, 400, FuturaBk);
+          padding: 6px 18px !important;
+     }
+
+     @media (min-width: 425px) {
+          @include font(14px, 16.78px, 400, FuturaBk);
+          padding: 6px 18px !important;
+     }
+
+     @media (min-width: 576px) {
+          @include font(14px, 16.78px, 400, FuturaBk);
+          padding: 10px 28px !important;
+     }
+
+}
+
+.tb-btn-sm {
+     padding: 6px 22px !important;
+     @include font(14px, 16.78px);
+
+     @media (min-width: 375px) {
+          padding: 6px 28px !important;
+     }
+
+     @media (min-width: 425px) {
+          padding: 6px 28px !important;
+     }
+
+     @media (min-width: 576px) {
+          padding: 6px 35px !important;
+     }
+}
+
+.tb-btn-xs {
+     padding: 2px 26px !important;
+     @include font(12px, 19.18px);
+}
+
+.tb-btn-xxs {
+     padding: 1px 22px !important;
+     @include font(10px, 19.18px);
+}
+
+/* --- PRIMARY BUTTONS --- */
+
+.tb-btn-primary {
+     background-color: transparent;
+     color: $Secondary-500;
+     border-radius: 4px;
+     border: none;
+}
+
+.tb-btn-primary:hover {
+     background-color: $primary-500;
+     color: $Secondary-100;
+}
+
+.tb-btn-primary:active {
+     opacity: .7;
+}
+
+.tb-btn-primary.active {
+     background-color: $primary-500;
+     color: $Secondary-100;
+}
+
+.tb-btn-primary.disabled,
+.tb-btn-primary:disabled {
+     background-color: $Secondary-300;
+     opacity: .7;
+     cursor: not-allowed;
+     pointer-events: none;
+}
+
+/* --- PRIMARY-BORDERED BUTTONS --- */
+
+.tb-btn-primary-bordered {
+     background-color: transparent;
+     color: $Secondary-500;
+     border: 1px solid $Secondary-500;
+     border-radius: 4px;
+}
+
+.tb-btn-primary-bordered:hover {
+     background-color: $primary-500;
+     color: $Secondary-100;
+     border: 1px solid $primary-500;
+}
+
+.tb-btn-primary-bordered:active {
+     opacity: .7;
+}
+
+.tb-btn-primary-bordered.active {
+     background-color: $primary-500;
+     color: $Secondary-100;
+     border: 1px solid $primary-500;
+}
+
+.tb-btn-primary-bordered.disabled,
+.tb-btn-primary-bordered:disabled {
+     background-color: $Secondary-300;
+     border: 1px solid $Secondary-300;
+     opacity: .7;
+     cursor: not-allowed;
+     pointer-events: none;
+}
+
+/* --- Secondary BUTTONS --- */
+
+.tb-btn-secondary {
+     background-color: $Secondary-500;
+     color: $Secondary-100;
+     border: 1px solid $Secondary-500;
+     border-radius: 4px;
+}
+
+.tb-btn-secondary:hover {
+     background-color: $primary-500;
+     color: $Secondary-100;
+     border: 1px solid $primary-500;
+}
+
+.tb-btn-secondary:active {
+     opacity: .7;
+}
+
+.tb-btn-secondary.active {
+     background-color: $primary-500;
+     color: $Secondary-100;
+     border: 1px solid $primary-500;
+}
+
+.tb-btn-secondary.disabled,
+.tb-btn-secondary:disabled {
+     background-color: $Secondary-300;
+     border: 1px solid $Secondary-300;
+     opacity: .7;
+     cursor: not-allowed;
+     pointer-events: none;
+}
+
+
+
+/* --- SECONDARY-BORDERED BUTTONS --- */
+
+.tb-btn-secondary-bordered {
+     background-color: $Secondary-800;
+     color: $Secondary-400;
+     border: 1px solid $Secondary-700;
+     border-radius: 4px;
+
+     &:hover,
+     &:active {
+          @extend .tb-btn-secondary;
+     }
+}

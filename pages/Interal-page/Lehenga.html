@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lehenga Saga</title>
+
+    <script src="/styles/anr-jsstarter.bundle.js"></script>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- owl-carousel custom-->
+    <link rel="stylesheet" href="../../../owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../../owl-carousel/owl.theme.default.css">
+
+    <script src="../../../owl-carousel/jquery.min.js"></script>
+    <script src="../../../owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="../../../styles/anr-cssstarter.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+
+</head>
+
+<body>
+    <!-- header starts here -->
+    <div class="container-fluid bg-secondary-400">
+        <div class="d-flex gap-2 align-items-center justify-content-center py-1">
+             <img src="../../assets/samyakk-icons/plane&amp;globe.svg" class="size-23x23" alt="">
+             <span class="global-shipping-msg paragraph-bk-100">Unlocking Global Shopping with free world wide
+                  shipping</span>
+        </div>
+   </div>
+   <nav class="navbar sticky-top pb-0 bg-secondary-100" aria-label="Offcanvas navbar large">
+        <div class="container">
+             <div class="mobile-menu-toggler position-relative d-lg-none d-md-flex d-flex">
+                  <button class="navbar-toggler border-0 shadow-none p-0" type="button"
+                       data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1" aria-controls="offcanvasNavbar1"
+                       aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <a class="navbar-brand samyakk-logo-mobile d-lg-none d-md-block d-block"
+                       href="../Home/home.html"></a>
+                  <!-- sidebar -->
+                  <div class="offcanvas side-bar-offcanvas offcanvas-start" tabindex="-1"
+                       id="offcanvasNavbar1" aria-labelledby="offcanvasNavbar2Label">
+                       <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                 aria-label="Close"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                            <div class="bg-primary-500 p-3">
+                                 <div class="tb-fs-18 text-white mb-3">
+                                      Ready to shop <br> great deals?
+                                 </div>
+                                 <button
+                                      class="btn btn-md button-transparent bg-secondary-100 border-0 rounded-0 w-100"
+                                      type="button">
+                                      <div class="d-flex justify-content-between">
+                                           <div class="">
+                                                Sign In / Register
+                                           </div>
+                                           <a href="../Home//home.html">
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </a>
+                                      </div>
+                                 </button>
+                            </div>
+
+                            <div class="mt-2 d-flex gap-3">
+                                 <button
+                                      class="btn btn-md button-transparent bg-secondary-100 rounded-0"
+                                      type="button">
+                                      <div
+                                           class="d-flex justify-content-between align-items-center gap-1">
+                                           <div class="size-23 align-justify-center">
+                                                <img src="../../assets/samyakk-icons/coins.svg" class="size-100"
+                                                     alt="">
+                                           </div>
+                                           <span class="tb-fs-14">INR</span>
+                                           <img src="../../assets/samyakk-icons/arrow-bottom.svg" alt="">
+                                      </div>
+                                 </button>
+                                 <button
+                                      class="btn btn-md button-transparent bg-secondary-200 rounded-0 border-0 flex-grow-1"
+                                      type="button">
+                                      <div class="d-flex justify-content-center align-items-center gap-2">
+                                           <div class="size-23 align-justify-center">
+                                                <img src="../../assets/samyakk-icons/whatsapp.svg" class="size-100"
+                                                     alt="">
+                                           </div>
+                                           <span class="tb-fs-14">+91 - 9999999999</span>
+                                      </div>
+                                 </button>
+                            </div>
+                            <div class="row g-2 gy-3 mt-2">
+                                 <div class="col-6">
+                                      <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2">
+                                           <img src="/assets/images/samyak-sidebar-images/women.png" alt=""
+                                                class="sidebar-category-img">
+                                           <div class="d-flex justify-content-between my-2">
+                                                <div class="">
+                                                     Women
+                                                </div>
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </div>
+                                      </div>
+
+                                 </div>
+                                 <div class="col-6">
+                                      <div>
+                                           <img src="/assets/images/samyak-sidebar-images/men.png" alt=""
+                                                class="sidebar-category-img">
+                                           <div class="d-flex justify-content-between my-2">
+                                                <div class="">
+                                                     Men
+                                                </div>
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </div>
+                                      </div>
+                                 </div>
+                                 <div class="col-6">
+                                      <div>
+                                           <img src="/assets/images/samyak-sidebar-images/bridal.png" alt=""
+                                                class="sidebar-category-img">
+                                           <div class="d-flex justify-content-between my-2">
+                                                <div class="">
+                                                     Bridel
+                                                </div>
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </div>
+                                      </div>
+                                 </div>
+                            </div>
+                       </div>
+                  </div>
+                  <!-- women sidebar -->
+                  <div class="offcanvas side-bar-offcanvas offcanvas-start" tabindex="-1"
+                       id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                       <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                                 <img src="/assets/samyakk-icons/arrow-long-back.svg" alt=""
+                                      data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1"
+                                      aria-controls="offcanvasNavbar1" aria-label="Toggle navigation">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                            <div class="row g-2">
+                                 <div class="col-6">
+                                      <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar3">
+                                           <img src="/assets/images/samyak-sidebar-images/sarees.png" alt=""
+                                                class="sidebar-category-img">
+                                           <div class="d-flex justify-content-between my-2">
+                                                <div class="">
+                                                     Sarees
+                                                </div>
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </div>
+                                      </div>
+
+                                 </div>
+                                 <div class="col-6">
+                                      <div>
+                                           <img src="/assets/images/samyak-sidebar-images/salwar-kameez.png" alt=""
+                                                class="sidebar-category-img">
+                                           <div class="d-flex justify-content-between my-2">
+                                                <div class="">
+                                                     Salwar Kameez
+                                                </div>
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </div>
+                                      </div>
+                                 </div>
+                                 <div class="col-6">
+                                      <div>
+                                           <img src="/assets/images/samyak-sidebar-images/lehanga.png" alt=""
+                                                class="sidebar-category-img">
+                                           <div class="d-flex justify-content-between my-2">
+                                                <div class="">
+                                                     Lehenga
+                                                </div>
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </div>
+                                      </div>
+                                 </div>
+                                 <div class="col-6">
+                                      <div>
+                                           <img src="/assets/images/Samyakk-product-category/Gowns.png" alt=""
+                                                class="sidebar-category-img">
+                                           <div class="d-flex justify-content-between my-2">
+                                                <div class="">
+                                                     Gowns
+                                                </div>
+                                                <img src="../../assets/samyakk-icons/arrow-right.svg" alt="">
+                                           </div>
+                                      </div>
+                                 </div>
+                                 <div class="col-12">
+                                      <div class="accordion mb-foot header-accordions mt-3"
+                                           id="accordion-women">
+                                           <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-women-1">
+                                                     <button class="accordion-button collapsed" type="button"
+                                                          data-bs-toggle="collapse" data-bs-target="#collapse-women-1"
+                                                          aria-expanded="false" aria-controls="collapse-women-1">
+                                                          What's New
+                                                     </button>
+                                                </h2>
+                                                <div id="collapse-women-1" class="accordion-collapse collapse"
+                                                     aria-labelledby="heading-women-1"
+                                                     data-bs-parent="#accordion-women">
+                                                     <div class="accordion-body p-0">
+                                                          <ul class="ps-4 mb-0">
+                                                               <li><a class="text-lt-100" href="#">What's New</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="#">Saree</a></li>
+                                                               <li><a class="text-lt-100" href="">Salwar Suits</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="">Lehengas</a></li>
+                                                               <li><a class="text-lt-100" href="">Gown</a></li>
+                                                          </ul>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                           <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-women-2">
+                                                     <button class="accordion-button collapsed" type="button"
+                                                          data-bs-toggle="collapse" data-bs-target="#collapse-women-2"
+                                                          aria-expanded="false" aria-controls="collapse-women-2">
+                                                          Men's Wear
+                                                     </button>
+                                                </h2>
+                                                <div id="collapse-women-2" class="accordion-collapse collapse"
+                                                     aria-labelledby="heading-women-2"
+                                                     data-bs-parent="#accordion-women">
+                                                     <div class="accordion-body p-0">
+                                                          <ul class="ps-4 mb-0">
+                                                               <li><a class="text-lt-100" href="#">What's New</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="#">Saree</a></li>
+                                                               <li><a class="text-lt-100" href="">Salwar Suits</a>
+                                                               </li>
+                                                               <li><a href="../Interal-page/Lehenga.html" class="text-lt-100" href="">Lehengas</a></li>
+                                                               <li><a class="text-lt-100" href="">Gown</a></li>
+                                                          </ul>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                           <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-women-3">
+                                                     <button class="accordion-button collapsed" type="button"
+                                                          data-bs-toggle="collapse" data-bs-target="#collapse-women-3"
+                                                          aria-expanded="false" aria-controls="collapse-women-3">
+                                                          Collection
+                                                     </button>
+                                                </h2>
+                                                <div id="collapse-women-3" class="accordion-collapse collapse"
+                                                     aria-labelledby="heading-women-3"
+                                                     data-bs-parent="#accordion-women">
+                                                     <div class="accordion-body p-0">
+                                                          <ul class="ps-4 mb-0">
+                                                               <li><a class="text-lt-100" href="#">What's New</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="#">Saree</a></li>
+                                                               <li><a class="text-lt-100" href="">Salwar Suits</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="">Lehengas</a></li>
+                                                               <li><a class="text-lt-100" href="">Gown</a></li>
+                                                          </ul>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+                            </div>
+
+                       </div>
+                  </div>
+                  <!-- saree sidebar -->
+                  <div class="offcanvas side-bar-offcanvas offcanvas-start" tabindex="-1"
+                       id="offcanvasNavbar3" aria-labelledby="offcanvasNavbar3Label">
+                       <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbar3Label">
+                                 <img src="/assets/samyakk-icons/arrow-long-back.svg" alt=""
+                                      data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                                      aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                            <div class="row g-2">
+                                 <div class="col-12">
+                                      <div>
+                                           <img src="/assets/images/samyak-sidebar-images/saree.png" alt=""
+                                                class="sidebar-category-img">
+                                      </div>
+
+                                 </div>
+                                 <div class="col-12">
+                                      <div class="accordion mb-foot header-accordions mt-3"
+                                           id="accordion-saree">
+                                           <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-saree-1">
+                                                     <button class="accordion-button collapsed" type="button"
+                                                          data-bs-toggle="collapse" data-bs-target="#collapse-saree-1"
+                                                          aria-expanded="false" aria-controls="collapse-saree-1">
+                                                          Pure Handloom Silk Saree
+                                                     </button>
+                                                </h2>
+                                                <div id="collapse-saree-1" class="accordion-collapse collapse"
+                                                     aria-labelledby="heading-saree-1"
+                                                     data-bs-parent="#accordion-saree">
+                                                     <div class="accordion-body p-0">
+                                                          <ul class="ps-4 mb-0">
+                                                               <li><a class="text-lt-100" href="#">What's New</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="#">Saree</a></li>
+                                                               <li><a class="text-lt-100" href="">Salwar Suits</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="">Lehengas</a></li>
+                                                               <li><a class="text-lt-100" href="">Gown</a></li>
+                                                               <li><a class="text-lt-100" href="">Men's Wear</a>
+                                                               </li>
+
+                                                          </ul>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                           <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-saree-2">
+                                                     <button class="accordion-button collapsed" type="button"
+                                                          data-bs-toggle="collapse" data-bs-target="#collapse-saree-2"
+                                                          aria-expanded="false" aria-controls="collapse-saree-2">
+                                                          banarasi Saree
+                                                     </button>
+                                                </h2>
+                                                <div id="collapse-saree-2" class="accordion-collapse collapse"
+                                                     aria-labelledby="heading-saree-2"
+                                                     data-bs-parent="#accordion-saree">
+                                                     <div class="accordion-body p-0">
+                                                          <ul class="ps-4 mb-0">
+                                                               <li><a class="text-lt-100" href="#">What's New</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="#">Saree</a></li>
+                                                               <li><a class="text-lt-100" href="">Salwar Suits</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="">Lehengas</a></li>
+                                                               <li><a class="text-lt-100" href="">Gown</a></li>
+                                                               <li><a class="text-lt-100" href="">Men's Wear</a>
+                                                               </li>
+
+                                                          </ul>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                           <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-saree-3">
+                                                     <button class="accordion-button collapsed" type="button"
+                                                          data-bs-toggle="collapse" data-bs-target="#collapse-saree-3"
+                                                          aria-expanded="false" aria-controls="collapse-saree-3">
+                                                          Kanchipuram Saree
+                                                     </button>
+                                                </h2>
+                                                <div id="collapse-saree-3" class="accordion-collapse collapse"
+                                                     aria-labelledby="heading-saree-3"
+                                                     data-bs-parent="#accordion-saree">
+                                                     <div class="accordion-body p-0">
+                                                          <ul class="ps-4 mb-0">
+                                                               <li><a class="text-lt-100" href="#">What's New</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="#">Saree</a></li>
+                                                               <li><a class="text-lt-100" href="">Salwar Suits</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="">Lehengas</a></li>
+                                                               <li><a class="text-lt-100" href="">Gown</a></li>
+                                                               <li><a class="text-lt-100" href="">Men's Wear</a>
+                                                               </li>
+
+                                                          </ul>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                           <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading-saree-4">
+                                                     <button class="accordion-button collapsed" type="button"
+                                                          data-bs-toggle="collapse" data-bs-target="#collapse-saree-4"
+                                                          aria-expanded="false" aria-controls="collapse-saree-4">
+                                                          Designer Saree
+                                                     </button>
+                                                </h2>
+                                                <div id="collapse-saree-4" class="accordion-collapse collapse"
+                                                     aria-labelledby="heading-saree-4"
+                                                     data-bs-parent="#accordion-saree">
+                                                     <div class="accordion-body p-0">
+                                                          <ul class="ps-4 mb-0">
+                                                               <li><a class="text-lt-100" href="#">What's New</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="#">Saree</a></li>
+                                                               <li><a class="text-lt-100" href="">Salwar Suits</a>
+                                                               </li>
+                                                               <li><a class="text-lt-100" href="">Lehengas</a></li>
+                                                               <li><a class="text-lt-100" href="">Gown</a></li>
+                                                               <li><a class="text-lt-100" href="">Men's Wear</a>
+                                                               </li>
+
+                                                          </ul>
+                                                     </div>
+                                                </div>
+                                           </div>
+                                      </div>
+                                 </div>
+                            </div>
+                       </div>
+                  </div>
+             </div>
+
+             <div class="category-menu d-lg-block d-md-none d-none col" id="category-menu">
+                  <button class="btn btn-lg button-transparent bg-secondary-100 border-0"
+                       type="button">
+                       <div class="d-flex justify-content-between align-items-center gap-1">
+                            <span class="tb-fs-14">WOMEN</span>
+                            <img src="../../assets/samyakk-icons/arrow-bottom-white.svg" alt="">
+                       </div>
+                  </button>
+                  <button class="btn btn-lg button-transparent bg-secondary-100 border-0"
+                       type="button">
+                       <div class="d-flex justify-content-between align-items-center gap-1">
+                            <span class="tb-fs-14">MEN</span>
+                            <img src="../../assets/samyakk-icons/arrow-bottom-white.svg" alt="">
+                       </div>
+                  </button>
+                  <button class="btn btn-lg button-transparent bg-secondary-100 border-0"
+                       type="button">
+                       <div class="d-flex justify-content-between align-items-center gap-1">
+                            <span class="tb-fs-14">BRIDAL</span>
+                            <img src="../../assets/samyakk-icons/arrow-bottom-white.svg" alt="">
+                       </div>
+                  </button>
+             </div>
+             <a class="navbar-brand samyakk-logo-desktop d-lg-block d-md-none d-none" href="../Home/home.html"></a>
+             <div class="d-flex justify-content-end col">
+                  <ul class="navbar-nav flex-row gap-lg-4 gap-3 pe-2">
+                       <li class="nav-item dropdown d-lg-block d-md-none d-none">
+                            <button class="btn btn-lg button-transparent bg-secondary-100 border-0"
+                                 type="button">
+                                 <div class="d-flex justify-content-between align-items-center gap-2">
+                                      <div class="size-23 align-justify-center">
+                                           <img src="../../assets/samyakk-icons/coins.svg" class="size-100" alt="">
+                                      </div>
+                                      <span class="tb-fs-14">INR</span>
+                                      <img src="../../assets/samyakk-icons/arrow-bottom.svg" alt="">
+                                 </div>
+                            </button>
+                       </li>
+                       <li class="nav-item d-lg-block d-md-none d-none">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                 <div class="nav-notifier-wrapper">
+                                      <img src="../../assets/samyakk-icons/magnifier.svg" class="nav-img" alt="">
+                                 </div>
+                            </a>
+                       </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                 <div class="nav-notifier-wrapper">
+                                      <img src="../../assets/samyakk-icons/recorder.svg" class="nav-img" alt="">
+                                 </div>
+                            </a>
+                       </li>
+                       <li class="nav-item d-lg-block d-md-none d-none">
+                            <a class="nav-link" href="#">
+                                 <div class="nav-notifier-wrapper">
+                                      <img src="../../assets/samyakk-icons/whatsapp.svg" class="nav-img" alt="">
+                                 </div>
+                            </a>
+                       </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                 <div class="nav-notifier-wrapper">
+                                      <img src="../../assets/samyakk-icons/heart.svg" class="nav-img" alt="">
+                                      <span class="notifier">2</span>
+                                 </div>
+                            </a>
+                       </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                 <div class="nav-notifier-wrapper">
+                                      <img src="../../assets/samyakk-icons/profile.svg" class="nav-img" alt="">
+                                 </div>
+                            </a>
+                       </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                 <div class="nav-notifier-wrapper">
+                                      <img src="../../assets/samyakk-icons/shopping-bag.svg" class="nav-img"
+                                           alt="">
+                                      <span class="notifier">2</span>
+                                 </div>
+                            </a>
+                       </li>
+
+                  </ul>
+             </div>
+
+        </div>
+        <div class="mainmenu container-fluid justify-content-center mt-2">
+             <ul class="navbar-nav flex-row main-menu-desktop d-lg-flex d-md-none d-none">
+                  <li class="nav-item">
+                       <a class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            WHAT’S NEW
+                       </a>
+                  </li>
+                  <li class="nav-item diamond-dot">
+                       <a href="../Interal-page/Saree.html" class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            SAREES
+                       </a>
+                  </li>
+                  <li class="nav-item diamond-dot">
+                       <a class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            SALWAR KAMEEZ
+                       </a>
+                  </li>
+                  <li class="nav-item diamond-dot">
+                       <a class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            LEHENGA
+                       </a>
+                  </li>
+                  <li class="nav-item diamond-dot">
+                       <a class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            GOWNS
+                       </a>
+                  </li>
+                  <li class="nav-item diamond-dot">
+                       <a class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            MEN’S WEAR
+                       </a>
+                  </li>
+                  <li class="nav-item diamond-dot">
+                       <a class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            COLLECTION
+                       </a>
+                  </li>
+                  <li class="nav-item diamond-dot">
+                       <a class="nav-link paragraph-bk-500" aria-current="page" href="#">
+                            INSTASHOP
+                       </a>
+                  </li>
+             </ul>
+             <div class="search-bar d-lg-none d-md-flex d-flex mb-2">
+                  <img src="/assets/samyakk-icons/magnifier.svg" alt="" class="search-icon size-23">
+                  <input type="search" name="search" placeholder="Search for items, fashions, and inspiration.."
+                       id="search-input" class="search-input">
+             </div>
+        </div>
+   </nav>
+   <!-- header ends here -->
+
+    <!-- Lehenga Saga Starts Here  -->
+    <div class="container-fluid mb-2">
+        <div class="container lehenga-saga" id="lehenga-saga-section">
+            <h1 class="heading-h2 text-center my-3">Lehenga Saga</h1>
+            <div class="row d-flex flex-wrap gx-3">
+                <div class="col-12 col-md-6 col-lg-3 Lehenga-saga-main">
+                    <div class="zoom-effect">
+                        <img src="../../../assets/images/samyakk-Lehenga-saga/Bridal Lehenga.png" alt="">
+                    </div>
+                    <div class="Lehenga-saga-maintext Lehenga heading-h4-100 hidden">Designer Lehengas</div>
+                    <div class="text-start">
+                        <p class="text-lg font-bold">Embroidered Mirror Lehenga</p>
+                        <p>Lehenga Blouse With Duppata</p>
+                        <p>30,000 <span class="line-through text-red-600">35,000</span></p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 Lehenga-saga-sub">
+                    <div class="zoom-effect">
+                        <img src="../../../assets/images/samyakk-Lehenga-saga/Designer Lehenga.png" alt="">
+                    </div>
+                    <div class="Lehenga-saga-subtext Lehenga heading-h4-100 hidden">Banarasi Lehengas</div>
+                    <div class="text-start">
+                        <p class="text-lg font-bold">Sky Blue Lehenga</p>
+                        <p>Lehenga Blouse With Duppata</p>
+                        <p>35,000<span class="line-through text-red-600">40,000</span></p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 Lehenga-saga-sub">
+                    <div class="zoom-effect">
+                        <img src="../../../assets/images/samyakk-Lehenga-saga/Jacket Lehangas.png" alt="">
+                    </div>
+                    <div class="Lehenga-saga-subtext Lehenga heading-h4-100 hidden">Jacket Lehangas</div>
+                    <div class="text-start">
+                        <p class="text-lg font-bold">Mirror Lehenga</p>
+                        <p>Lehenga Blouse With Jacket</p>
+                        <p>10,000 <span class="line-through text-red-600">14,000</span></p>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6 Lehenga-saga-sub">
+                    <div class="zoom-effect">
+                        <img src="../../../assets/images/samyakk-Lehenga-saga/Silk Lehenga.png" alt="">
+                    </div>
+                    <div class="Lehenga-saga-subtext Lehenga heading-h4-100 hidden">Silk Lehenga</div>
+                    <div class="text-start">
+                        <p class="text-lg font-bold">Purple Work Lehenga</p>
+                        <p>Lehenga Blouse With Duppata</p>
+                        <p>25,000<span class="line-through text-red-600">30,000</span></p>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- Lehenga Saga Ends Here  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

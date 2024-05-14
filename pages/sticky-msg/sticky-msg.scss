@@ -1,0 +1,19 @@
+.sticky-wa {
+     bottom: 20%;
+     right: -7%;
+     rotate: 270deg;
+     position: fixed !important;
+     z-index: 9999;
+
+     .inner-sticky-wa {
+          background: #A18455;
+          display: flex;
+          border-radius: 4px 4px 0px 0px;
+          justify-content: center;
+          width: auto;
+     }
+     .inner-sticky-wa img{
+          width: 18px;
+     }
+}
+

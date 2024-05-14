@@ -1,0 +1,41 @@
+// ------  video driven css starts here ------
+#video-driven-section {
+  .banner-img {
+    background: url('../../../assets/images/timeless-weave/banner.png');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .video-driven-1 {
+    width: 90%;
+    height: 74%;
+    z-index: 10;
+    border: 10px solid #B4801D;
+    top: 13%;
+    position: relative;
+    left: 8%;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+
+  .video-driven-2 {
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    position: relative;
+    left: -8%;
+    object-fit: cover;
+    object-position: 0 0;
+  }
+
+  .banner-text {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+}
+
+// ------  video driven css ends here ------

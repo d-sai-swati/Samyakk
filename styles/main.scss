@@ -1,0 +1,25 @@
+@import './abstracts/variables';
+@import './abstracts/common';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+@import './abstracts/buttons';
+@import './abstracts/typography';
+@import '../pages/Footer/footer.scss';
+@import '../pages/Header/header.scss';
+
+@import '../pages/Home/banner-carousel/banner-carousel.scss';
+@import '../pages/Home/product-quality/product-quality.scss';
+@import '../pages/Home/product-category/product-category.scss';
+@import '../pages/Home/product-category-mobile/product-category-mobile.scss';
+@import '../pages/Home/ready-to-shop/ready-to-shop.scss';
+@import '../pages/Home/new-arrivals/new-arrivals.scss';
+@import '../pages/Home/video-driven/video-driven.scss';
+@import '../pages/Home/shop-collections/shop-collections.scss';
+@import '../pages/Home/client-diaries/client-diaries.scss';
+@import '../pages/Home/news-letter/news-letter.scss';
+@import '../pages/Home/shop-by-occasion/shop-by-occasion.scss';
+@import '../pages/Home/timeless-weave/timeless-weave.scss';
+@import '../pages/Home/trending-look/trending-look.scss';
+@import '../pages/Home/trending-now/trending-now.scss';
+@import '../pages/sticky-msg/sticky-msg.scss';
+@import '../pages/Home/service-section/service-section.scss';

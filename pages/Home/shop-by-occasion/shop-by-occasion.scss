@@ -1,0 +1,151 @@
+//  ****Shop-by Occasion css starts*****
+// @import '../../../assets/fonts/SignPainterFont/SignPainterRegular.ttf';
+@import '../../../styles/abstracts/common';
+
+
+#shop-by-occasion-section {
+
+  .shop-banner {
+    @media (max-width: 768px) {
+      height: 266px !important;
+    }
+  }
+
+  .overlay-text {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 50px;
+    width: max-content;
+
+
+    @media (max-width: 768px) {
+      left: 50%;
+      translate: -50%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .shop-by-collection,
+    .col-md-4,
+    .col-12 {
+      position: relative !important;
+    }
+
+    .shop-by-collection img {
+      position: relative !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    #shop-by-collection .owl-nav {
+      position: absolute;
+      top: 80%;
+      left: -65%;
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+
+    #shop-by-collection .owl-nav {
+      position: absolute;
+      top: 78%;
+      left: -47%;
+      display: flex;
+      gap: 15px;
+
+      @media (max-width:1600px) {
+        img {
+          width: 32px;
+        }
+      }
+    }
+  }
+
+  .new-arrivals {
+    img {
+      width: 271px;
+      height: 435px;
+    }
+
+    .price {
+      position: relative;
+      align-items: baseline;
+
+      img {
+        width: 9px !important;
+        height: 12px !important;
+      }
+    }
+
+    .arrows {
+      position: relative;
+
+      .arrow-icons {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        img {
+          margin-left: 10px;
+
+        }
+      }
+    }
+  }
+
+  .carousal-nav-top {
+    position: relative;
+  }
+
+  .carousal-nav-top .owl-nav {
+    position: absolute;
+    top: -55px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .favorite {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    filter: grayscale(1%) brightness(0) invert(130%);
+  }
+
+
+  #new-arrivals .owl-item {
+    margin: 0px 15px !important;
+  }
+
+  .favorite-icon {
+    position: absolute;
+    width: 20px !important;
+    height: 20px;
+    left: 84%;
+    top: 6%;
+    filter: grayscale(1%) brightness(0) invert(130%);
+  }
+
+  .favorite-icon:hover {
+    cursor: pointer;
+    /* filter: grayscale(1%) brightness(2) invert(130%); */
+    filter: brightness(100%) grayscale(0%) invert(100%);
+    /* background-color: rgba(255, 255, 255, 1); */
+  }
+
+  .favorite {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    filter: grayscale(1%) brightness(0) invert(130%);
+  }
+}
+
+//  ***************Shop-by Occasion css ends***************

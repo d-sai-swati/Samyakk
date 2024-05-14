@@ -1,0 +1,208 @@
+// Variables
+$logo-image: url('../assets/images/logos/samyak-logo.png');
+$diamond-dot-image: url('../assets/samyakk-icons/diamond-dot.svg');
+
+.side-bar-offcanvas {
+  --bs-offcanvas-width: 320px;
+
+
+  .accordion-header,
+  .accordion-collapse,
+  .accordion-button {
+    background-color: #4E5258 !important;
+  }
+
+  .accordion-item {
+    border-right-color: #4E5258 !important;
+    border-left-color: #4E5258 !important;
+    border-top-color: #5E6166 !important;
+    border-bottom-color: #5E6166 !important;
+
+    a {
+      text-decoration: none !important;
+    }
+
+    li {
+      list-style: none;
+      color: #fff !important;
+    }
+
+    button {
+      border-radius: 0;
+    }
+  }
+
+  .accordion-button {
+    color: #fff;
+    cursor: pointer;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &,
+    &:not(.collapsed) {
+      color: #fff;
+    }
+
+    &::after {
+      rotate: -90deg !important;
+    }
+
+    &:not(.collapsed)::after {
+      rotate: 180deg !important;
+    }
+  }
+
+}
+
+// Styles
+.align-justify-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.global-shipping-msg {
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+}
+
+.samyakk-logo-desktop,
+.samyakk-logo-mobile {
+  background-image: $logo-image;
+  display: block;
+  background-size: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.samyakk-logo-desktop {
+  width: 184px;
+  height: 73px;
+}
+
+.samyakk-logo-mobile {
+  width: 97px;
+  height: 40px;
+}
+
+.diamond-dot {
+  background-image: $diamond-dot-image;
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-left: 25px;
+  padding-left: 30px;
+
+  @media (max-width: 1199px) {
+    margin-left: 12px;
+    padding-left: 16px;
+  }
+}
+
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin min-size($size) {
+  min-width: $size;
+  min-height: $size;
+}
+
+.size-23 {
+  @include size(23px);
+}
+
+.size-100 {
+  @include size(100%);
+}
+
+.nav-notifier-wrapper {
+  @include size(20px);
+  position: relative;
+}
+
+.nav-img {
+  @include size(100%);
+}
+
+.notifier {
+  background-color: $primary-500;
+  position: absolute;
+  top: 5px;
+  left: 100%;
+  transform: translate(-50%, -50%) !important;
+  border-radius: 50%;
+  @include min-size(16px);
+  @extend .align-justify-center !optional;
+  @extend .tb-fs-8 !optional;
+  @extend .text-secondary-100 !optional;
+  padding: 1px;
+}
+
+.offcanvas-start {
+  top: 36px !important;
+}
+
+.mainmenu {
+
+  box-shadow: 0px 4px 5px 0px #00000008;
+
+  @media (min-width:992px) {
+    border: 1px solid $Secondary-300 ;
+  }
+}
+
+.search-bar {
+  background-color: $Secondary-200;
+  padding: 10px;
+  border: 1px solid $Secondary-300;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.search-input {
+  background-color: $Secondary-200;
+  border: none;
+  width: 100%;
+  margin-left: 10px;
+  outline: none;
+}
+
+.sidebar-category-img {
+  height: 186px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.header-accordions {
+
+  .accordion-header,
+  .accordion-collapse,
+  .accordion-button {
+    background-color: #fff !important;
+    color: $Secondary-500 ;
+  }
+
+  .accordion-item {
+    border: none;
+    border-bottom: 1px solid $Secondary-200 !important;
+  }
+
+  .accordion-item:first-of-type .accordion-button {
+    border-top: 1px solid $Secondary-200 !important;
+  }
+
+  .accordion-item a {
+    text-decoration: none !important;
+    color: $Secondary-500;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: $primary-500;
+  }
+}

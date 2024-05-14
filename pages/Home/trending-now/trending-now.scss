@@ -1,0 +1,94 @@
+//  ****new arrival css starts*****
+.trending-now-carousel {
+
+    .price {
+        position: relative;
+        align-items: baseline;
+
+        img {
+            width: 9px !important;
+            height: 12px !important;
+        }
+    }
+
+    .arrows {
+        position: relative;
+
+        .arrow-icons {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            img {
+                margin-left: 10px;
+
+            }
+        }
+    }
+
+    .owl-nav {
+        position: absolute;
+        top: -68px;
+        right: 20px;
+        display: flex;
+        gap: 15px;
+
+        @media (max-width:1600px) {
+            top: -76px;
+
+            img {
+                width: 32px;
+            }
+        }
+
+        @media (max-width:992px) {
+            top: -60px;
+            gap: 10px;
+        }
+    }
+
+
+    .trending-now-carousel {
+        position: relative;
+    }
+
+
+
+    .favorite {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        filter: grayscale(1%) brightness(0) invert(130%);
+    }
+
+
+    #new-arrivals .owl-item {
+        margin: 0px 15px !important;
+    }
+
+    .favorite-icon {
+        position: absolute;
+        width: 20px !important;
+        height: 20px;
+        left: 84%;
+        top: 6%;
+        filter: grayscale(1%) brightness(0) invert(130%);
+    }
+
+    .favorite-icon:hover {
+        cursor: pointer;
+        filter: brightness(100%) grayscale(0%) invert(100%);
+    }
+
+    .favorite {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        filter: grayscale(1%) brightness(0) invert(130%);
+    }
+}
+
+
+
+//  ***************new arrival css ends***************

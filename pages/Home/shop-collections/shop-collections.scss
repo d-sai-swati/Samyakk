@@ -1,0 +1,64 @@
+@import '../../..//styles/abstracts/common';
+@import '../../..//styles/abstracts/variables';
+
+
+// ----- Shop our collection SCSS ------
+.shop-collection-text {
+     width: 100%;
+     text-align: center;
+     position: absolute;
+     bottom: 10px;
+     @extend .text-secondary-100;
+
+     // @media (max-width: 576px) {
+     //      @include tb-fs-29 {
+     //           @include tb-fs-16;
+     //      }
+
+     //      @include tb-fs-12 {
+     //           @include tb-fs-10;
+     //      }
+     // }
+}
+
+#shop-collections {
+     .card {
+          border-radius: 0px !important;
+
+          @media (max-width: 1024px) {
+               height: 300px;
+          }
+
+          @media (max-width: 768px) {
+               height: 250px;
+          }
+
+          img {
+               @media (max-width: 1024px) {
+                    height: 100%;
+               }
+          }
+     }
+
+     img {
+          width: 100%;
+          object-fit: cover;
+     }
+
+     .shadow-sm {
+          overflow: hidden !important;
+     }
+
+     .shadow-sm img:hover {
+          transform: scale(1.2) !important;
+     }
+
+     .shadow-sm img {
+          transition: 0.4s;
+     }
+}
+
+
+
+
+// ----- Shop our collection SCSS ------

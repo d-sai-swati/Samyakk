@@ -1,0 +1,68 @@
+//  client Diaries css starts
+.client-diaries-carousel {
+     // position: relative;
+
+     .testimonial img {
+          width: 35px !important;
+     }
+
+     .client-img {
+          @media (max-width: 1023px) {
+               width: 200px !important;
+               height: 200px !important;
+               object-fit: contain;
+          }
+
+          @media (max-width: 768px) {
+               width: 200px !important;
+               height: 200px !important;
+               object-fit: cover;
+               object-position: 0 0;
+          }
+
+          @media (max-width: 500px) {
+               width: 120px !important;
+               height: 120px !important;
+               object-fit: contain;
+          }
+     }
+
+     // .client-diaries-carousel .owl-nav{
+     //      position: relative;
+     // }
+
+     .owl-nav {
+          @media (max-width:1600px) {
+               img {
+                    width: 32px;
+               }
+          }
+     }
+
+     .owl-prev {
+          position: absolute !important;
+          top: 40% !important;
+          left: -70px !important;
+
+     }
+
+     .owl-next {
+          position: absolute !important;
+          top: 40% !important;
+          right: -70px !important;
+     }
+
+     .media {
+          border: 1px solid #555;
+     }
+}
+
+.client-diaries-carousal-container {
+     margin: 0 100px;
+
+     @media (max-width: 992px) {
+          margin: 0;
+     }
+}
+
+//  client Diaries css ends

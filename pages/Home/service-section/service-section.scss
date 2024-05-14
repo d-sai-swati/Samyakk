@@ -1,0 +1,27 @@
+#product-services {
+    .paragraph-bk-400 {
+        text-align: left;
+    }
+
+    .col img {
+        @media (max-width: 425px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .col img {
+        @media (min-width: 425px) and (max-width: 768px) {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+.product-services {
+    margin: 0 100px;
+
+    @media (max-width: 992px) {
+        margin: 0;
+    }
+}

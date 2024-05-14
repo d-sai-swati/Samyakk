@@ -1,0 +1,118 @@
+// footer css starts
+
+@import '../../styles/abstracts/common';
+
+footer {
+  .footer-main {
+    margin: 0 100px;
+
+    @media (max-width: 992px) {
+      margin: 0;
+    }
+  }
+
+  ul {
+    li {
+      h5 {
+        @extend .tb-fs-20;
+        @extend .text-secondary-100;
+      }
+
+      a {
+        @extend .tb-fs-16;
+        text-decoration: none;
+        @extend .text-secondary-100;
+      }
+    }
+  }
+
+  .footer-socialicons {
+    margin: 1.5rem 0 !important;
+  }
+
+  .footer-navbar a {
+    color: #ffffff;
+  }
+
+  .accordion-button::after {
+    background-image: url('../../assets/samyakk-icons/plus-white.svg') !important;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url('../../assets/samyakk-icons/minus-white.svg') !important;
+  }
+
+  .mobile-view {
+    display: none;
+  }
+
+  .accordion-header,
+  .accordion-collapse,
+  .accordion-button {
+    background-color: #4E5258 !important;
+  }
+
+  .accordion-item {
+    border-right-color: #4E5258 !important;
+    border-left-color: #4E5258 !important;
+    border-top-color: #5E6166 !important;
+    border-bottom-color: #5E6166 !important;
+
+    a {
+      text-decoration: none !important;
+    }
+
+    li {
+      list-style: none;
+      color: #fff !important;
+    }
+
+    button {
+      border-radius: 0;
+    }
+  }
+
+  .accordion-button {
+    color: #fff;
+    cursor: pointer;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &,
+    &:not(.collapsed) {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // .Lehenga-saga-maintext {
+  //   font-size: 12px !important;
+  //   font-weight: 400 !important;
+  // }
+
+  .mobile-view {
+    display: block;
+  }
+
+  .desk-view {
+    display: none;
+  }
+
+  .shipping-partners img {
+    width: 65px !important;
+  }
+
+  .we-accept img {
+    width: 55px;
+  }
+
+  .text-lt-100 {
+    font-size: 14px !important;
+  }
+
+}
+
+// footer css ends

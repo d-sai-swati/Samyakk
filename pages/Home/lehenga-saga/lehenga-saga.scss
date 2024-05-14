@@ -1,0 +1,55 @@
+// ------------- Lehenga Saga Section Reusable SCSS Starts ------------
+
+@import '../../../styles/abstracts/common';
+@import '../../../styles/abstracts/variables';
+
+
+.lehenga-saga img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Lehenga-saga-sub {
+     position: relative;
+     text-align: center;
+}
+
+.Lehenga-saga-main {
+  @extend .Lehenga-saga-sub;
+}
+
+.Lehenga-saga-subtext,
+.Lehenga-saga-maintext {
+  position: absolute;
+  bottom: 30px !important;
+  left: 50% !important;
+  translate: -50%;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .available-services img {
+    width: 45px;
+    height: 45px;
+
+    @media (min-width: 768px) {
+      width: 65px;
+      height: 65px;
+    }
+  } 
+}
+
+/* Quick-zoom Container */
+.lehenga-saga img {
+  transition: 0.4s;
+}
+
+.zoom-effect {
+  overflow: hidden !important;
+}
+
+.lehenga-saga img:hover {
+  transform: scale(1.2) !important;
+}
+
+// ------------- Lehenga Saga Section Reusable SCSS Ends ------------

@@ -1,0 +1,215 @@
+@import './variables';
+// @import '../../assets/fonts/SignPainterFont/SignPainterRegular.ttf';
+
+
+@media (max-width: 1920px) {
+
+     .container,
+     .container-lg,
+     .container-md,
+     .container-sm,
+     .container-xl,
+     .container-xxl {
+          max-width: 98%;
+     }
+}
+
+@media (min-width: 1920px) {
+
+     .container,
+     .container-lg,
+     .container-md,
+     .container-sm,
+     .container-xl,
+     .container-xxl {
+          max-width: 1820px !important;
+     }
+}
+
+@media (max-width: 576px) {
+
+     .container,
+     .container-lg,
+     .container-md,
+     .container-sm,
+     .container-xl,
+     .container-xxl {
+          max-width: 100%;
+     }
+}
+
+@media (max-width: 425px) {
+
+     .container,
+     .container-lg,
+     .container-md,
+     .container-sm,
+     .container-xl,
+     .container-xxl{
+          --bs-gutter-x: 0.3rem;
+          --bs-gutter-y: 0;
+          width: calc(100% - 2 * var(--bs-gutter-x));
+          padding-right: calc(var(--bs-gutter-x) * 0.3);
+          padding-left: calc(var(--bs-gutter-x) * 0.3);
+          margin-right: auto;
+          margin-left: auto;
+     }
+     .container-fluid{
+          padding: 0 .4rem;
+     }
+}
+
+.border-grey {
+     border: 1px solid #404040;
+     border-radius: 4px;
+}
+
+// Primary Background Color
+.bg-primary-500 {
+     background-color: $primary-500;
+}
+
+.bg-primary-400 {
+     background-color: $primary-400;
+}
+
+.bg-primary-500-20 {
+     background-color: $primary-500-20;
+}
+
+// Primary text/content color
+.text-primary-500 {
+     color: $primary-500;
+}
+
+.text-primary-400 {
+     color: $primary-400;
+}
+
+.text-primary-500-20 {
+     color: $primary-500-20;
+}
+
+// Secondary background color classes
+.bg-secondary-600 {
+     background-color: $Secondary-600;
+}
+
+.bg-secondary-500 {
+     background-color: $Secondary-500;
+}
+
+.bg-secondary-400 {
+     background-color: $Secondary-400;
+}
+
+.bg-secondary-300 {
+     background-color: $Secondary-300;
+}
+
+.bg-secondary-200 {
+     background-color: $Secondary-200;
+}
+
+.bg-secondary-100 {
+     background-color: $Secondary-100;
+}
+
+// Secondary text/content color
+.text-secondary-500 {
+     color: $Secondary-500;
+}
+
+.text-secondary-400 {
+     color: $Secondary-400;
+}
+
+.text-secondary-300 {
+     color: $Secondary-300;
+}
+
+.text-secondary-200 {
+     color: $Secondary-200;
+}
+
+.text-secondary-100 {
+     color: $Secondary-100 !important;
+}
+
+// Font-Family Classes
+.futura-md {
+     font-family: $text-primary;
+}
+
+.signpainter-font {
+     font-family: $text-secondary;
+}
+
+
+
+// Font size mixin
+@mixin tb-fs($size, $weight: 400) {
+     font-size: $size;
+     font-weight: $weight !important;
+}
+
+// Headings and fonts
+.tb-fs-8 {
+     @include tb-fs(8px);
+}
+
+.tb-fs-10 {
+     @include tb-fs(10px);
+}
+
+.tb-fs-12 {
+     @include tb-fs(12px);
+}
+
+.tb-fs-14 {
+     @include tb-fs(14px);
+}
+
+.tb-fs-16 {
+     @include tb-fs(16px);
+}
+
+@mixin tb-fs-18 {
+     @include tb-fs(18px);
+}
+
+.tb-fs-20 {
+     @include tb-fs(20px);
+}
+
+.tb-fs-22 {
+     @include tb-fs(22px);
+}
+
+.tb-fs-24 {
+     @include tb-fs(24px);
+}
+
+.tb-fs-29 {
+     @include tb-fs(29px);
+}
+
+.tb-fs-32 {
+     @include tb-fs(32px);
+
+     @media (max-width: 425px) {
+          @include tb-fs(20px);
+     }
+}
+
+.tb-fs-48 {
+     @include tb-fs(48px);
+}
+
+.tb-fs-121 {
+     @include tb-fs(121px, $weight: 550);
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+     background: none;
+}

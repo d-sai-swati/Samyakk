@@ -1,0 +1,21 @@
+@import '../../../styles/abstracts/common';
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+     .available-services {
+          img {
+               width: 45px;
+               height: 45px;
+
+               @media (min-width: 768px) {
+                    width: 65px;
+                    height: 65px;
+               }
+          }
+     }
+
+     .available-services p {
+          font-size: 14px !important;
+     }
+
+}

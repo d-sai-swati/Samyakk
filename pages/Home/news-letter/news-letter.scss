@@ -1,0 +1,47 @@
+// ---- News-Letter SCSS -------
+@import '../../../styles/abstracts/common';
+@import '../../../styles/abstracts/variables';
+
+.subscribe-now-banner {
+  margin-bottom: 15px;
+  padding: 0;
+  background-image: url('../../../assets/images/Banner-carousel/subscribe-now-banner.png');
+  background-position: top;
+  background-repeat: no-repeat;
+
+  .subscribe-now {
+    margin: 0 100px;
+
+    @media (max-width: 992px) {
+      margin: 0;
+    }
+  }
+
+  @mixin email-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  button {
+    @media (max-width: 768px) {
+      width: 100% !important;
+    }
+  }
+
+  .heading-h3 {
+    @media (max-width: 768px) {
+      @include tb-fs-18;
+      text-align: center;
+      padding: 0 2rem;
+      @include email-form;
+    }
+  }
+}
+
+// ---- News-Letter SCSS -------

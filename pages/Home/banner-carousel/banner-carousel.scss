@@ -1,0 +1,17 @@
+.home-banner-carousel {
+    @media (min-width: 1440px) {
+        .carousel-item {
+            height: 500px !important;
+        }
+    }
+    @media (min-width: 1024px) {
+        .carousel-item {
+            height: 500px !important;
+        }
+    }
+    @media (max-width: 520px) {
+        .carousel-item {
+            height: 150px !important;
+        }
+    }
+}
